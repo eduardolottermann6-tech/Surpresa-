@@ -6,7 +6,7 @@ canvas.height = windows.innerHeight;
 
 function soltarConfete() {
   for (let i = 0; i < 100; i++) {
-    criarConfete():
+    criarConfete();
   }
 }
 
