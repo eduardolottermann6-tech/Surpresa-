@@ -33,7 +33,7 @@ const btnNao = document.getElementById("nao");
 const resposta = document.getElementById("resposta");
 
 btnSim.addEventListener("click", () => {
-  resposta.innerText = "EU SABIA!!! 💖💍";
+  resposta.innerText = "Te amo mais ainda depois desse SIM! 💘";
 });
 
 // botão NÃO foge
