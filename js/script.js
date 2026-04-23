@@ -34,6 +34,8 @@ const resposta = document.getElementById("resposta");
 
 btnSim.addEventListener("click", () => {
   resposta.innerText = "Te amo mais ainda depois desse SIM! 💘";
+
+  soltarConfetes();
 });
 
 // botão NÃO foge
@@ -42,3 +44,30 @@ btnNao.addEventListener("mouseover", () => {
   const y = Math.random() * 150 - 75;
   btnNao.style.transform = `translate(${x}px, ${y}px)`;
 });
+
+
+function soltarConfetes() {
+  const duration = 3000;
+  const fim = Date.now() + duracao;
+
+  (function frame () {
+    confetti({
+      particleCount: 20,
+      spread: 70,
+      origin: { y: 0.6},
+    });
+
+    //confete coração
+    confetti({
+      particleCount: 10,
+      spread: 80,
+      origin: { y: 0.6},
+      shapes: ['circle'],
+      scalar: 1.5,
+    });
+
+    if (Date.now() > fim) {
+      clearInterval(intervalo);
+    }
+  }, 250);
+}
