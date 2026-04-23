@@ -1,5 +1,5 @@
-const imagens = [  "../assets/Foto1.jpeg",  "../assets/Foto2.jpeg",  "../assets/Foto3.jpeg",  "../assets/Foto4.jpeg",  "../assets/Foto5.jpeg",  "../assets/Foto6.jpeg","../assets/Foto7.jpeg","../assets/Foto8.jpeg","../assets/Foto9.jpeg","../assets/Foto10.jpeg",
-];
+const imagens = [ "../assets/Foto1.jpeg","../assets/Foto2.jpeg","../assets/Foto3.jpeg","../assets/Foto4.jpeg","../assets/Foto5.jpeg","../assets/Foto6.jpeg","../assets/Foto7.jpeg","../assets/Foto8.jpeg","../assets/Foto9.jpeg","../assets/Foto10.jpeg",];
+
 let index = 0;
 
 const slide = document.getElementById("slide");
